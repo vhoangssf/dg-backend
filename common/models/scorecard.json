@@ -1,0 +1,59 @@
+{
+  "name": "Scorecard",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "basketNumber": {
+      "type": [
+        "number"
+      ],
+      "required": true
+    },
+    "par": {
+      "type": [
+        "number"
+      ],
+      "required": true
+    },
+    "throws": {
+      "type": [
+        "number"
+      ],
+      "required": true
+    },
+    "score": {
+      "type": [
+        "number"
+      ],
+      "required": true
+    },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "createDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

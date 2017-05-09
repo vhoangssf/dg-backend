@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Scorecard": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "appUsers": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
