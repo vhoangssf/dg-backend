@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Scorecard": {
+      "type": "hasMany",
+      "model": "Scorecard",
+      "foreignKey": "userId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
